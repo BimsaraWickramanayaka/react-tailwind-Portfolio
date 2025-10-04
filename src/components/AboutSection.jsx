@@ -16,9 +16,7 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-              With over 3 years of experience in web & mobile development as an undergraduate, I specialize
-              in creating responsive, accessible, and performant web & mobile
-              applications using modern technologies.
+              As an undergraduate with hands-on experience, I build responsive, accessible, and high-performance applications using React, Flutter, and Node.js, including practical AI integrations.
             </p>
 
             <p className="text-muted-foreground">
@@ -35,7 +33,8 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href=""
+                href="/projects/cv.pdf"
+                download="Bimsara_CV.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV
@@ -81,7 +80,7 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Project Management</h4>
                   <p className="text-muted-foreground">
-                    Have lead multiple group projects in university including, web development and social activities.
+                    Have lead multiple group projects in university including, web development and social projects.
                   </p>
                 </div>
               </div>

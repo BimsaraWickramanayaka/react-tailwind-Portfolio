@@ -49,10 +49,10 @@ export const ContactSection = () => {
                             <div>
                                 <h4 className="font-medium"> Email</h4>
                                 <a
-                                href="mailto:hello@gmail.com"
+                                href="mailto:wickramanayakab@gmail.com"
                                 className="text-muted-foreground hover:text-primary transition-colors"
                                 >
-                                hello@gmail.com
+                                wickramanayakab@gmail.com
                                 </a>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ export const ContactSection = () => {
                                 <a
                                     className="text-muted-foreground hover:text-primary transition-colors"
                                 >
-                                    No:88, Harigala, Kegalle
+                                    No:88, Harigala, Atala, Kegalle
                                 </a>
                             </div>
                         </div>
@@ -89,16 +89,16 @@ export const ContactSection = () => {
                     <div className="pt-8">
                         <h4 className="font-medium mb-4">Contact Me</h4>
                         <div className="flex space-x-4 justify-center">
-                            <a href="#" target="_blank">
+                            <a href="http://www.linkedin.com/in/bimsara-wickramanayaka-7a8810266" target="_blank">
                                 <Linkedin />
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="https://x.com/bimsara001?s=21" target="_blank">
                                 <Twitter />
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="https://www.instagram.com/bima001_?igsh=MWxleWI3ajBlN2J5ZQ%3D%3D&utm_source=qr" target="_blank">
                                 <Instagram />
                             </a>
-                            <a href="#" target="_blank">
+                            <a href="https://www.facebook.com/share/1CQ4QwvpqH/?mibextid=wwXIfr" target="_blank">
                                 <Facebook />
                             </a>
                         </div>
