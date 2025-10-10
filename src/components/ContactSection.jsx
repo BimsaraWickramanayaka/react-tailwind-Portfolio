@@ -2,10 +2,40 @@ import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitch, Twitt
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 export const ContactSection = () => {
     const { toast } = useToast();
     const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+    e.preventDefault();
+
+    setIsSubmitting(true);
+    emailjs
+      .sendForm("service_n61ngt7", "template_dftsk4t", form.current, "Rf0IeRXNr_1Kledyr")
+      .then(
+        () => {
+          toast({
+            title: "Message sent!",
+            description: "Thank you — I'll get back to you soon.",
+          });
+          form.current.reset();
+          setIsSubmitting(false);
+        },
+        (error) => {
+          console.error("EmailJS error:", error);
+          toast({
+            title: "Sending failed",
+            description: "Failed to send message. Please try again later.",
+          });
+          setIsSubmitting(false);
+        }
+      );
+  }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -108,7 +138,7 @@ export const ContactSection = () => {
                 <div className="bg-card p-8 rounded-lg shadow-xs" onSubmit={handleSubmit}>
                     <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
-                    <form className="space-y-6">
+                    <form ref={form} onSubmit={sendEmail} className="space-y-6">
                         <div>
                             <label htmlFor="name"
                             className="block text-sm font-medium mb-2"
