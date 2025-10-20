@@ -24,7 +24,8 @@ export const HeroSection = () => {
                         </h1>
 
                         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 opacity-0 animate-fade-in-delay-3">
-                            I craft scalable web and mobile experiences that blend clean design with AI-driven functionality. Specializing in full-stack development with React, Flutter, and Node.js, I build user-focused apps that perform in production.
+                            I craft scalable web and mobile experiences that blend clean design with AI-driven functionality. <br /> <br />
+                            Specializing in full-stack development with React, Flutter, and Node.js, I build user-focused apps that perform well in production.
                         </p>
 
                         <div className="pt-4 opacity-0 animate-fade-in-delay-4">
